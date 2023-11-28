@@ -1,0 +1,500 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(back.jpg);
+  margin: 0;
+  padding: 0;
+}
+
+#loggo1{
+  position: absolute;
+  top: 2%;
+  left: 1%;
+  width: 130px;
+}
+
+#loggo2{
+  position: absolute;
+  top: 2%;
+  left: 90%;
+  width: 130px;
+}
+
+.slider{
+  width: 800px;
+  height: 500px;
+  border-radius: 50px;
+  overflow: hidden;
+  position: relative;
+  left: 0%;
+  top: 0%;
+}
+
+.slides{
+  width: 500px;
+  height: 500px;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img{
+  width: 800px;
+  height: 500px;
+}
+
+.navigation-manual{
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: #000;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+.hrstyle1{
+  display: block; 
+  content: ""; 
+  height: 30px; 
+  width: 1000px;
+  margin-top: -31px; 
+  border-style: solid; 
+  border-color: black; 
+  border-width: 0 0 5px 0; 
+  border-radius: 40px;
+}
+
+.hrstyle2{
+  height: 30px; 
+  border-style: solid; 
+  border-color: black; 
+  border-width: 5px 0 0 0; 
+  border-radius: 20px;
+}
+
+.hrstyle3{
+  height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px black inset;
+}
+
+header {
+  background-color: lightgreen;
+  text-align: center;
+  padding: 20px 0;
+}
+
+#about {
+  background-color: black;
+  width: 1000px;
+  height: 70px;
+}
+
+#logo {
+  width: 300px;
+  height: 50px;
+  margin: 10px 10px 10px 10px;
+}
+
+.top {
+  color: white;
+  position: relative;
+  left: auto;
+  float: right;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#img1 {
+  width: 270px;
+  height: 280px;
+  border: 4px solid;
+  margin: 10px 10px;
+  object-fit:fill;
+}
+
+#img2 {
+  width: 290px;
+  height: 280px;
+  border: 4px solid;
+  margin: 10px 10px;
+  object-fit:contain;
+}
+
+#img3 {
+  width: 280px;
+  height: 280px;
+  border: 4px solid;
+  margin: 10px 25px;
+  object-fit:cover;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-image: url(Back1.jpg);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.btn {
+  background-color: olive;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: white;
+  padding: 25px 35px;
+  border-radius: 5000px;
+  float: right;
+  margin-right: 42%;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.introduction,
+.future-aspects,
+.smart-waste-images,
+.city-bins,
+.report-bin {
+  margin-bottom: 20px;
+}
+
+.image-gallery {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.image-gallery img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+#binsList,
+#binSelect,
+#companyuse,
+#newBinName,
+#reporterName {
+  width: 90%;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+#addBin,
+#reportForm button {
+  background-color: lightgreen;
+  color: black;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#addBin:hover,
+#reportForm button:hover {
+  background-color: lightgreen;
+}
+
+.footer {
+  color: black;
+  margin: 0px;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  flex-wrap:wrap;
+  margin: auto;
+}
+
+.contain {
+  max-width: 800px;
+  margin: auto;
+}
+
+.footer-col1{
+  width: 500px;
+}
+
+.footer-col2{
+  width: 300px;
+  margin: auto;
+}
+
+html {
+  --scrollbarBG: #fff;
+  --thumbBG: #90a4ae;
+}
+
+.card {
+  visibility: hidden;
+  position: fixed;
+  bottom: 10px;
+  right: 100px;
+  height: 500px;
+  width: 400px;
+  background-color: lightgreen;
+  /* margin-left: 12vw;
+    margin-top: 5vw; */
+  box-shadow: 2vw 2vw 12vw 3vw #ccc;
+}
+
+.show{
+  visibility:visible;
+}
+body .card #header {
+  height: 20%;
+  background: black;
+  padding: 0vw;
+}
+
+body .card #header h1 {
+  color: #fff;
+  font-size: 2vw;
+  font-family: "Finger Paint", cursive;
+  padding: 1vw;
+}
+
+body .card #message-section::-webkit-scrollbar {
+  width: 10px;
+}
+
+body .card #message-section {
+  height: 65%;
+  padding: 0 2.5vw;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+body .card #message-section::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+
+body .card #message-section::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
+
+body .card #message-section #bot,
+body .card #message-section #user {
+  position: relative;
+  bottom: 0;
+  min-height: 1.5vw;
+  border: 0.15vw solid #777;
+  background-color: #fff;
+  border-radius: 0px 1.5vw 1.5vw 1.8vw;
+  padding: 1vw;
+  margin: 1.5vw 0;
+}
+
+body .card #message-section #user {
+  border: 1.5px solid #000;
+  border-radius: 1.5vw 0vw 1.5vw 1.8vw;
+  background-color: #000;
+  float: right;
+}
+
+body .card #message-section #user #user-response {
+  color: #fff;
+}
+
+body .card #message-section .message {
+  color: #000;
+  clear: both;
+  line-height: 1.2vw;
+  font-size: 1.2vw;
+  padding: 8px;
+  position: relative;
+  margin: 8px 0;
+  max-width: 85%;
+  word-wrap: break-word;
+  z-index: 2;
+}
+
+body .card #input-section {
+  /* z-index: 1; */
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  overflow: hidden;
+  height: 10%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+body .card #input-section input {
+  color: #000;
+  min-width: 0.5vw;
+  outline: none;
+  height: 100%;
+  width: 80%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid #000 0.1vw;
+}
+
+body .card .send {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  flex: 0 0 auto;
+  /* margin-left: 1.4vw;
+    margin-right: 0vw; */
+  padding: 0;
+  position: relative;
+  outline: none;
+  height: 100%;
+  width: 20%;
+}
+
+body .card .send .circle {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body .card .send .circle i {
+  font-size: 3vw;
+}
+
+#chat-bot {
+  cursor:pointer;
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  border-radius:50%;
+}
+
+#chat-bot img {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border-radius:50%;
+}
+
+.containerrr{
+  display: flex;
+  width:800px;
+  height:400px;
+  overflow:hidden;
+  margin:20px auto;
+  object-fit: fill;
+  border:5px solid black;
+  padding:1px;
+}
+.parentt{
+  display: flex;
+  animation: slide 16s infinite;
+  animation-timing-function:linear(0,0 90%,1);
+}
+.img9{
+  width:800px;
+  height:400px;
+  margin: 0 5px 0 0;
+}
+@keyframes slide{
+  0%{
+      transform: translateX(0%);
+  }
+  5%{
+      transform: translateX(0%);
+  }
+  25%{
+      transform: translateX(-25%);
+  }
+  30%{
+      transform: translateX(-25%);
+  }
+  50%{
+      transform: translateX(-50%);
+  }
+  55%{
+      transform: translateX(-50%);
+  }
+  75%{
+      transform: translateX(-75%);
+  }
+  80%{
+      transform: translateX(-75%);
+  }
+  100%{
+      transform: translateX(0%);
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+}
+
+.analytics-container {
+  background-color: #fff;
+  width: 80%;
+  margin: 2em auto;
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container {
+  width: 100%;
+  max-width: 600px;
+}
+

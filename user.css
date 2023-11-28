@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(back.jpg);
+    margin: 0;
+    padding: 0;
+  }
+
+  #loggo1{
+    position: absolute;
+    top: 2%;
+    left: 1%;
+    width: 130px;
+  }
+  
+  #loggo2{
+    position: absolute;
+    top: 2%;
+    left: 90%;
+    width: 130px;
+  }
+
+  .hrstyle1{
+    display: block; 
+    content: ""; 
+    height: 30px; 
+    width: 1000px;
+    margin-top: -31px; 
+    border-style: solid; 
+    border-color: black; 
+    border-width: 0 0 5px 0; 
+    border-radius: 40px;
+  }
+  
+  .hrstyle2{
+    height: 30px; 
+    border-style: solid; 
+    border-color: black; 
+    border-width: 5px 0 0 0; 
+    border-radius: 20px;
+  }
+  
+  .hrstyle3{
+    height: 10px;
+      border: 0;
+      box-shadow: 0 10px 10px -10px black inset;
+  }
+
+  header {
+    background-color: lightgreen;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  #about {
+    background-color: black;
+    width: 1000px;
+    height: 70px;
+  }
+  
+  #logo {
+    width: 300px;
+    height: 50px;
+    margin: 10px 10px 10px 10px;
+  }
+
+  .top {
+    color: white;
+    position: relative;
+    left: auto;
+    float: right;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-image: url(Back1.jpg);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+
+.introduction,
+.future-aspects,
+.smart-waste-images,
+.city-bins,
+.report-bin {
+  margin-bottom: 20px;
+}
+
+.image-gallery {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.image-gallery img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+#binsList,
+#binSelect,
+#newBinName,
+#reporterName {
+    width: 90%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 3px;
+    margin-bottom: 10px;
+  }
+  
+  #addBin,
+  #reportForm button {
+    background-color: lightgreen;
+    color: black;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+#addBin:hover,
+#reportForm button:hover {
+  background-color: lightgreen;
+}
+
+.footer {
+  color: black;
+  margin: 0px;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  flex-wrap:wrap;
+  margin: auto;
+}
+
+.contain {
+  max-width: 800px;
+  margin: auto;
+}
+
+.btn {
+  background-color: olive;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: white;
+  padding: 25px 35px;
+  border-radius: 5000px;
+  float: right;
+  margin-right: 42%;
+}

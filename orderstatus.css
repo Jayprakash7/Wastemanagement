@@ -1,0 +1,15 @@
+/* orderstatus.css */
+body{
+    background-image:  url(Back.jpg);
+}
+h1{
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
+img{
+    width: 800px;
+    height: 400px;
+    display: block;
+    margin: auto;
+}

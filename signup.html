@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="styless.css">
+</head>
+<body id="back">
+    <div class="container1">
+        <h2><b>Sign Up</b></h2>
+        <form action="connect.php" method="post" id="signupForm">
+            <label for="signupUsername"><b>User ID:</b></label>
+            <input type="text" id="signupUsername" name="signupUsername" required><br><br>
+            <label for="signupPassword"><b>Password:</b></label>
+            <input type="password" id="signupPassword" name="signupPassword" required><br><br>
+            <label for="signupEmail"><b>Email ID:</b></label>
+            <input type="email" id="signupEmail" name="signupEmail" required><br><br>
+            <label for="signupPhone"><b>Phone No:</b></label>
+            <input type="number" id="signupPhone" name="signupPhone" required><br><br>
+            <p id="signupSuccess" class="success"></p>
+            <button type="submit"><b>Sign Up</b></button>
+        </form>
+    </div>
+    <script src="signup.js"></script>
+</body>
+</html>
