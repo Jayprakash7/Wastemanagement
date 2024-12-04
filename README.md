@@ -1,1 +1,1 @@
-# Wastemanagement
+#Smart Waste management
